@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
+     
         <Weather defaultCity="New York" />
 
         <footer>
@@ -18,7 +19,7 @@ function App() {
           </a>{" "}
           and is{" "}
           <a
-            href="https://github.com/wecodeschool/react-weather-app"
+            href="https://github.com/kasiasoltysiak/React-Weather"
             target="_blank"
             rel="noopener noreferrer"
           >

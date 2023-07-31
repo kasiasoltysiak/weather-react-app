@@ -1,8 +1,11 @@
-body {
-  background-color: #F89D9D;
+body, html {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(255,205,238,1) 0%, rgba(136,221,255,1) 100%); 
 }
 .App {
   text-align: center;
+  
 }
 
 .App-logo {

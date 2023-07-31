@@ -1,15 +1,18 @@
 import React, {useState} from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import "./weather.css"
+import axios from "axios";
 
 export default function Weather () {
     return (
         <div className="weatherbox">
-            <div className="searchbox">
+            <div className="box">
+            <div className="formbox">
             <form>
-                <input type="search" placeholder="change city"/>
-                <input type="submit" value="search"/>
+                <input type="search" placeholder="change city" className="searchbox"/>
+                <input type="submit" value="search" className="btn-form"/>
             </form>
+            </div>
             </div>
             
 
@@ -28,18 +31,19 @@ export default function Weather () {
 
                 <div className="m-5"> 
                     <div className="circle" > </div>
-                    <h2>21C</h2>
+                    <h2>21°C</h2>
                 </div>
                 <div className="d-flex justify-content-between">
                     <div>
-                    min: 16
-                    max: 22
+                    min: 16°C<br/>
+                    max: 22°C
                     </div>
                     <div>
-                    Humidity: 53%
+                    Humidity:<br/>
+                    53%
                     </div>
                     <div>
-                    Wind: 
+                    Wind: <br/>
                     4.12km/h    
                     </div>
                 </div>
@@ -50,32 +54,32 @@ export default function Weather () {
                     <div>
                     Mon
                     <div className="circle" > </div>
-                    min: 16<br/>
-                    max: 22
+                    min: 16°C<br/>
+                    max: 22°C
                     </div>
                     <div>
                     Mon
                     <div className="circle" > </div>
-                    min: 16<br/>
-                    max: 22
+                    min: 16°C<br/>
+                    max: 22°C
                     </div>
                     <div>
                     Mon
                     <div className="circle" > </div>
-                        min: 16<br/>
-                    max: 22
+                        min: 16°C<br/>
+                    max: 22°C
                     </div>
                     <div>
                     Mon
                     <div className="circle" > </div>
-                    min: 16 <br/>
-                    max: 22
+                    min: 16°C <br/>
+                    max: 22°C
                     </div>
                     <div>
                     Mon
                     <div className="circle" > </div>
-                    min: 16<br/>
-                    max: 22
+                    min: 16°C<br/>
+                    max: 22°C
                     </div>
                 </div>
             </div>
